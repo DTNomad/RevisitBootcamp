@@ -2,6 +2,10 @@ let input = prompt("what would you like to do?");
 
 const todos = ["Collect Chicken Eggs", "Clean Litter Box"];
 
+const rollDie = () => (
+    Math.floor(Math.random() * 6) + 1
+)
+
 while(input !== "quit" && input !== "q"){
     if(input === "list"){
         console.log("******************");
